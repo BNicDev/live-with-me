@@ -3,6 +3,9 @@ body{
     padding: 0;
     font-family: 'Golos Text', sans-serif;
 }
+.inactive{
+    display: none;
+}
 nav{
     text-align: center;
     align-items: center;
@@ -13,6 +16,11 @@ h1{
     margin: 0;
     background-color: burlywood;
     padding-top: 15px;
+}
+.left-aside{
+    position: absolute;
+    bottom: 300px;
+    left: 250px;
 }
 .info-container{
     display: inline-block;
