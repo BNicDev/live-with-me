@@ -37,3 +37,18 @@ h1{
     height: 3px;
     margin-bottom: 5px;
 }
+.rigth-aside{
+    position: absolute;
+    right: 350px;
+    bottom: 370px;
+}
+.result-container{
+    align-items: center;
+    text-align: center;
+}
+.title{
+    margin: 3px;
+}
+.second-next{
+    background-color: brown;
+}

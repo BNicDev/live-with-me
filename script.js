@@ -20,9 +20,24 @@ function continuarFuncion(){
     }
 
     if(totalIng.value == '2'){
-        infoContainer.innerHTML = "<label>ingrese el valor del ingreso numero 1</label> <br> <input> <br> <label>ingrese el valor del ingreso numero 2</label> <br> <input>";
-        resultContainer.innerHTML = "<h2 class = 'tittle'>La cantidad de ingresos mensual es</h2> <br> "+totalIng.value+"" 
+        infoContainer.innerHTML = '<label>ingrese el valor del ingreso numero 1</label> <br> <input class ="first-salary"> <br> <label>ingrese el valor del ingreso numero 2</label> <br> <input class="second-salary"> <br> <button class = "second-next">next</button>';
+        resultContainer.innerHTML = '<p class = "title">La cantidad de ingresos mensual es</p> <br> '+totalIng.value+'' 
+        var firstSalary = document.querySelector('.first-salary');
+        var secondSalary = document.querySelector('.second-salary');
+    }else if(firstSalary == 0){
+        const secondBtnNext = document.querySelector('.second-next');
+        secondBtnNext.addEventListener('click', secondContinue(firstSalary.value, secondSalary.value));
     }
+    
+}
+
+
+function secondContinue(firstSalary, secondSalary){
+if(firstSalary>1 && secondSalary >1){
+    resultContainer.innerHTML= "<p class = 'first-salary-title'>el primer salario es de </p> <br> "+firstSalary+"";
+}else{
+    console.log("no hay nadie");
+}
 }
 
 
